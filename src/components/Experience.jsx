@@ -1,9 +1,19 @@
 import EXPERIENCES from '/src/assets/experiences.js';
-
+import resume from "/src/assets/FelixArbuciasResume.pdf";
 const Experience = () => {
     return (
         <div className="border-b border-neutral-900 pb-4">
-            <h1 className="my-20 text-center text-4xl">Experience</h1>
+            <div className='flex justify-center'>
+                <h1 className="my-20 text-center text-4xl">Experience
+                    <a href={resume} className='text-center'>
+                        <h3 className='text-lg text-neutral-400 font-semibold p-3 hover:underline decoration-teal-300'>
+                            View My
+                            <span className='text-teal-300'> Resume</span>
+                        </h3>
+                    </a>
+                </h1>
+            </div>
+            
             <div>
                 {EXPERIENCES.map((experience, index) => (
                     <div key={index} className='mb-8 flex flex-wrap lg:justify-center'>
