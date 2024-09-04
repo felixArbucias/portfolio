@@ -11,7 +11,6 @@ window.addEventListener("mousemove", function(e){
     coords.x = e.clientX;
     coords.y = e.clientY;
 
-    animateCircles();
 });
 
 function animateCircles() {
@@ -21,6 +20,9 @@ function animateCircles() {
     circles.forEach(function(circle, index) {
         circle.style.left = x - 12 + "px";
         circle.style.top = y - 12 + "px";
+
+        circle.style.scale = (circles.length - index) / circles.length;
+
         circle.x = x;
         circle.y = y;
 
@@ -28,6 +30,8 @@ function animateCircles() {
         x += (nextcircle.x - x) * 0.3;
         y += (nextcircle.y - y) * 0.5;
     });
+
+    requestAnimationFrame(animateCircles);
 }
 
     

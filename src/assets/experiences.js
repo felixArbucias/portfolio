@@ -45,4 +45,6 @@ export const PROJECTS = [
         technologies: ["Javascript, HTML, CSS"],
     },
     
-]
+];
+
+export default EXPERIENCES;
