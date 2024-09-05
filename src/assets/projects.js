@@ -1,6 +1,7 @@
 import memoryGame from "./MemoryGame2.png";
 import Expenses from "./expensetracker.png";
 import DevBuds from "./devbudlight.png";
+
 export const PROJECTS = [
     {
         title: 'DevBuds',
@@ -18,7 +19,7 @@ export const PROJECTS = [
         title: 'Light and Sound Memory Game',
         image: memoryGame,
         description: 'Game plays a variety of sounds and flashes button being pressed. User must repeat the sequence to win.',
-        technologies: ["Javascript, HTML, CSS"],
+        technologies: ["Javascript", "HTML / CSS"],
     },
     
 ];
