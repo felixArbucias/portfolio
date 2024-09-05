@@ -1,6 +1,6 @@
 import memoryGame from "./src/MemoryGame2.png";
 import Expenses from "./src/expensetracker.png";
-import DevBuds from "./src/devbudLight.png";
+import DevBuds from "./src/assets/devbudLight.png";
 
 export const PROJECTS = [
     {
